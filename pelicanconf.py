@@ -1,6 +1,6 @@
 AUTHOR = 'Fedor Alekseev'
 SITENAME = 'Pelican test'
-SITEURL = ""
+SITEURL = "https://atlz253.github.io/python-static-site/"
 
 PATH = "content"
 
