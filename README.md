@@ -36,3 +36,4 @@
 3. В файле `postcss.config.js` подключены установленные плагины
 4. В `package.json` был добавлен скрипт сборки при помощи PostCSS: `"build-css": "postcss themes/ваша_тема/static/css/input.css -o output/static/css/main.min.css"`
 5. В `Makefile` был модифицирован скрипт `publish` для вызова `npm` скрипта
+6. Обновлен `.github/workflows/pelican.yml` для установки npm зависимостей
