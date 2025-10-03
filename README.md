@@ -21,4 +21,10 @@
 2. В `pelicanconf.py` в константе `THEME` указали путь до директории с темой `simple-bootstrap`
 3. Для изменения темы достаточно изменять файлы в директории шаблона темы
 4. При помощи команды `pelican content -o output -s pelicanconf.py --autoreload --listen` был запущен сервер для проверки изменений
-5. 
+
+## Минификация HTML
+
+1. Установлен пакет с закрепленной версией `pip install minify-html~=0.15.0` из-за несовместимости пакета `pelican-htmlmin` с более новыми версиями
+2. Был установлен `pelican-htmlmin`: `pip install pelican-htmlmin`
+3. В `pelicanconf.py` была добавлена константа `PLUGINS = ['minify']`
+4. Была проверена сборка проекта при помощи `make publish`

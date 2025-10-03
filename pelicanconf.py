@@ -3,6 +3,8 @@ SITENAME = 'Pelican test'
 SITEURL = ""
 THEME="mytheme"
 
+PLUGINS = ['minify']
+
 PATH = "content"
 
 TIMEZONE = 'Europe/Moscow'
