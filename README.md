@@ -28,3 +28,11 @@
 2. Был установлен `pelican-htmlmin`: `pip install pelican-htmlmin`
 3. В `pelicanconf.py` была добавлена константа `PLUGINS = ['minify']`
 4. Была проверена сборка проекта при помощи `make publish`
+
+## PostCSS
+
+1. Был инициализирован `package.json`: `npm init -y`
+2. Был установлен PostCSS: `npm install --save-dev postcss postcss-cli autoprefixer cssnano`
+3. В файле `postcss.config.js` подключены установленные плагины
+4. В `package.json` был добавлен скрипт сборки при помощи PostCSS: `"build-css": "postcss themes/ваша_тема/static/css/input.css -o output/static/css/main.min.css"`
+5. В `Makefile` был модифицирован скрипт `publish` для вызова `npm` скрипта
