@@ -1,6 +1,6 @@
 # Пример статической сайта, сгенерированного при помощи Pelican
 
-## Отчет
+## Генерация шаблона и автоматическое развертывание на GH Actions
 
 1. Был установлен python с (официального сайта)(https://www.python.org/)
 2. Был установлен venv по (инструкции)[https://virtualenv.pypa.io/en/latest/installation.html]
@@ -14,3 +14,11 @@
 10. Был включен Pages для репозитория: `Settings -> Pages -> Branch -> gh-pages`
 11. Была перезапущена последняя проваленная задача GitHub Actions, после успешного завершения был проверен доступ к сайту
 12. В файле конфигурации `pelicanconf.py` был задан базовый URL сайта (`SITEURL`) для корректной работы стилей
+
+## Подключение собственной темы
+
+1. Из [репозитория тем Pelican](https://github.com/getpelican/pelican-themes) перенесли шаблон темы `simple-bootstrap` в проект
+2. В `pelicanconf.py` в константе `THEME` указали путь до директории с темой `simple-bootstrap`
+3. Для изменения темы достаточно изменять файлы в директории шаблона темы
+4. При помощи команды `pelican content -o output -s pelicanconf.py --autoreload --listen` был запущен сервер для проверки изменений
+5. 
